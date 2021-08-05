@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <title>Pseudoclases y Pseudoelementos</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="cabecera">
+            <section id="barraNav">
+                <nav class="navBar">
+                    <ul class="navList">
+                        <li class="listItem"><a class="link" href="index.html" class="link">Inicio</a></li>
+                        <li class="listItem"><a class="link" href="#pseudoClases" class="link">PseudoClases</a></li>
+                        <li class="listItem"><a class="link" href="#pseudoElementos" class="link">PseudoElementos</a>
+                        </li>
+                        <li class="listItem"><a class="link" href="#piePagina" class="link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main id="principal">
+            <h1 class="titulo" id="tituloGen">Pseudoclases y Pseudoelementos</h1>
+            <div class="pseudoClases" id="pseudoClases">
+                <section class="concepto" id="concpPseudoCl">
+                    <h1 class="titulo" id="tituloPseudoCl">Pseudoclases</h1>
+                    <p class="parrConcp" id="parrConcpPsCl">
+                        Las hojas de estilo asocian características de estilo a los elementos basándose en las etiquetas
+                        de los elementos y en su posición relativa (en el árbol del documento). Las pseudo-clases y los
+                        pseudo-elementos permiten hacer referencia a determinados elementos sin basarse en la
+                        información contenida en el árbol del documento.</p>
+
+                    <p class="parrConcp">
+                        La diferencia entre pseudo-clases y pseudo-elementos es sutil. En general, los pseudo-elementos
+                        suelen hacer referencia a determinadas partes de un elemento, mientras que las pseudo-clases
+                        suelen hacer referencia al estado del elemento.
+                    </p>
+
+                    <p class="parrConcp">
+                        Otra diferencia importante es que un pseudo-elemento sólo puede aparecer al final de un
+                        selector, mientras que una pseudo-clase puede aparecer en cualquier elemento del selector.
+                    </p>
+                </section>
+                <section class="contenido" id="contenidoPseudoCl">
+                    <div class="contDet" id="contHover">
+                        <div class="contenido1">
+                            <h2 class="tituloCont">:hover</h2>
+                            <p class="parrCont" id="parrHover">
+                                La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con
+                                un
+                                dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando
+                                el
+                                usuario se desplaza sobre un elemento con el cursor (puntero del mouse).
+                            </p>
+
+                        </div>
+                        <div class="contenido1">
+                            <h2 class="tituloCont">:link</h2>
+                            <p class="parrCont" id="parrHover">
+                                La pseudo-clase :link CSS representa un elemento que aún no se ha visitado. Coincide con
+                                cada elemento no visitado de las etiquetas "a", "area" o "link" que tiene un atributo
+                                href.
+                            </p>
+                        </div>
+                        <div class="contenido1">
+                            <h2 class="tituloCont">:visited</h2>
+                            <p class="parrCont" id="parrHover">
+                                La pseudo-clase :visited de CSS representa enlaces que el usuario ya ha visitado. Por
+                                motivos de privacidad, los estilos que se pueden modificar con este selector son muy
+                                limitados.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contDet" id="contHover">
+                        <div class="contenido2">
+                            <h2 class="tituloCont">:active</h2>
+                            <p class="parrCont" id="parrHover">
+                                La pseudo-clase (en-US) :active de CSS representa un elemento (como un botón) que el
+                                usuario está activando. Cuando se usa un mouse, la "activación" generalmente comienza
+                                cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La
+                                pseudo-clase :active se usa comúnmente en los elementos "a" y "button", pero también se
+                                puede usar en otros elementos.
+                            </p>
+                        </div>
+                        <div class="contenido2">
+                            <h2 class="tituloCont">:focus</h2>
+                            <p class="parrCont" id="parrHover">
+                                La pseudo-clase :focus CSS representa un elemento (como una entrada de formulario) que
+                                ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un
+                                elemento o lo selecciona con la tecla "Tab" del teclado.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="pseudoElementos" id="pseudoElementos">
+                <section class="concepto" id="concpPseudoEl">
+                    <h1 class="titulo" id="tituloPseudoEl">PseudoElementos</h1>
+                    <p class="parrConcp" id="parrConcpPsEl">
+                        Al igual que las pseudo-classes, los pseudo-elementos se añaden a los selectores, pero en
+                        cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta
+                        del documento. Por ejemplo, el pseudoelemento ::first-line selecciona solo la primera línea del
+                        elemento especificado por el selector.
+                    </p>
+                </section>
+                <section class="contenido" id="contenidoPseudoEl">
+                    <div class="contDet" id="contHover">
+                        <div class="contenido1">
+                            <h2 class="tituloCont2">::first-letter</h2>
+                            <p class="parrCont2" id="parrHover">
+                                El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea
+                                un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o
+                                tablas).
+                            </p>
+
+                        </div>
+                        <div class="contenido1">
+                            <h2 class="tituloCont2">::first-line</h2>
+                            <p class="parrCont2" id="parrHover">
+                                El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de
+                                bloque. Nótese que la longitud de la primera línea depende de muchos factores,
+                                incluyendo el ancho del elemento, el ancho del documento y el tamaño de fuente del
+                                texto.
+                            </p>
+                        </div>
+                        <div class="contenido1">
+                            <h2 class="tituloCont2">::selection</h2>
+                            <p class="parrCont2" id="parrHover">
+                                El selector ::selection CSS pseudo-elemento aplica reglas a una porción de un documento
+                                que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un
+                                dispositivo) del usuario.
+
+                                Sólo un pequeño subconjunto de propiedades CSS pueden ser usadas en una regla
+                                ::selection en el selector de: color, background, background-color y text-shadow.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contDet" id="contHover">
+                        <div class="contenido2">
+                            <h2 class="tituloCont2">::after</h2>
+                            <p class="parrCont2" id="parrHover">
+                                En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado.
+                                Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad
+                                content.Es en linea (inline) de forma predeterminada.
+                            </p>
+                        </div>
+                        <div class="contenido2">
+                            <h2 class="tituloCont2">::before</h2>
+                            <p class="parrCont2" id="parrHover">
+                                En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado.
+                                Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad
+                                content. Este elemento se muestra en línea con el texto de forma predeterminada.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form" id="formulario">
+                        <form action="" id="form">
+                            <h2 class="txt-contact">Dejame tu correo si quieres que te contacte</h2>
+                            <input type="email" id="email" placeholder="Ingresa tu correo aqui">
+                        </form>
+                    </div>
+                </section>
+
+
+            </div>
+
+
+        </main>
+        <footer id="piePagina">
+            <p id="gitHub">GitHub</p>
+            <a id="link-gitHub" href="https://www.github.com/idiazj06"><img
+                    src="./Iconos/iconmonstr-github-1-240 (1).png" alt=""></a>
+            <p>Ilan Díaz - Academia Geek 2021</p>
+
+        </footer>
+    </div>
+</body>
+
+</html>

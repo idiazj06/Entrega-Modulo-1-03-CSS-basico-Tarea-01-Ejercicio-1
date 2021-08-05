@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    left: 0;
+    top: 0;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+/*NavBAr*/
+.navBar {
+    width: 100vw;
+    margin: 30px auto;
+}
+
+.navList {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.listItem {
+    margin: 10px 20px;
+    transition: margin .2s, font-size .2s;
+    font-size: 16px;
+
+    background-color: transparent;
+}
+/*Principal/Main*/
+#principal {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+/*Titulo Principal*/
+
+#principal #tituloGen {
+    width: 60%;
+    margin: auto;
+}
+
+/*Visual contenedores*/
+#cabecera {
+    height: 20vh;
+}
+
+.pseudoClases {
+    height: 100vh;
+}
+
+.pseudoElementos {
+    height: 100vh;
+}
+
+
+/*Principal - Pseudoclases*/
+.concepto {
+    width: 75%;
+    margin: 20px auto;
+}
+
+.contenido {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contDet {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenido1 {
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    margin: 20px 10px;
+    text-align: justify;
+}
+
+.contenido2 {
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    margin: 20px 10px;
+}
+
+.tituloCont {
+    background: blue;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tituloCont2 {
+    background: red;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.parrConcp {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.parrCont {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.parrCont2 {
+    width: 80%;
+    margin: 10px auto;
+}
+
+img {
+    max-width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+}
+
+.form {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-contact {
+    margin-bottom: 20px;
+}
+
+#email {
+    width: 70%;
+    height: 30px;
+    text-align: center;
+    background: whitesmoke;
+}
+/*PseudoElementos*/
+
+.parrCont::first-letter {
+    color: blue;
+    font-size: 18px;
+}
+
+
+.parrCont2::first-letter {
+    color: red;
+    font-size: 18px;
+}
+
+.parrConcp::first-line {
+    font-size: 19px;
+}
+
+p::selection {
+    background-color: rgb(70, 70, 70);
+    color: rgb(255, 204, 0);
+}
+
+h1::selection {
+    background-color: rgb(70, 70, 70);
+    color: red;
+}
+
+h2::selection {
+    background-color: rgb(70, 70, 70);
+    color: rgb(0, 255, 255);
+}
+
+
+#gitHub::before {
+    content: "Puedes ver mi trabajo en ";
+}
+
+#gitHub::after {
+    content: " haciendo click en el icono abajo";
+}
+
+/*PseudoClases*/
+
+.listItem:hover {
+    margin: 15px 20px;
+    font-size: 20px;
+
+}
+
+#link-gitHub:hover {
+    color: rgb(255, 204, 0);
+
+}
+
+.link:hover {
+    color: rgb(255, 204, 0);
+    background-color: rgba(255, 204, 0, 0.070);
+    padding: 10px 20px;
+}
+
+h1:hover {
+    font-size: 40px;
+}
+
+.tituloCont:hover {
+    background: rgba(255, 204, 0, 0.815);
+    color: whitesmoke;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    font-size: 30px;
+
+}
+
+.tituloCont2:hover {
+    background: rgba(255, 204, 0, 0.815);
+    color: whitesmoke;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    font-size: 30px;
+}
+
+p:hover {
+    font-size: 20px;
+
+}
+
+img:hover {
+    margin: 10px;
+    background-color: rgb(90, 72, 1);
+    border-radius: 50%;
+}
+
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: rgb(182, 182, 182);
+}
+
+.contenido1:active {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contenido2:active {
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#email:focus {
+    background-color: black;
+    border: whitesmoke;
+}
+
+
+
+
+
+
+#piePagina {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
